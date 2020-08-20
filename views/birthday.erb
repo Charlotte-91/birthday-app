@@ -1,0 +1,6 @@
+<% today = Time.now.strftime("%d/%m/%Y")%>
+<% if @date == today %>%
+    <h1>Happy Birthday <%= @birthday_name %> <h1>
+<% else %>
+<%number_of_days =(today - @date).to_i%>
+    <h1> Your birthday will be in <> days,<%= @birthday_name %>. </h1>
